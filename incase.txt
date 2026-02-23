@@ -1,0 +1,22 @@
+    <section class="about-us">
+        <div class="about-container">
+
+            <div class="about-text">
+                <h2>About SOLERGY</h2>
+                <p>
+                    SOLERGY is a trusted solar energy provider committed to delivering
+                    reliable, affordable and sustainable power solutions across Nigeria.
+                    Our mission is to help homes and businesses reduce electricity costs
+                    while promoting clean energy for a brighter future.
+                </p>
+
+                <p>
+                    With years of experience and a team of certified professionals,
+                    we specialize in solar installations, inverter systems and
+                    long-term maintenance support.
+                </p>
+
+                <a href="tel:+2348136838517" class="about-btn">Contact Us Today</a>
+            </div>
+        </div>
+    </section>

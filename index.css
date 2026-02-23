@@ -1,0 +1,499 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-img {
+    width: 140px;
+    height: 150px;
+}
+.logo-img-2{
+    width: 500px;
+    margin-top: -50px;
+}
+
+.navbar {
+    background: url('./images/new-folder-1/solar10.jpg') no-repeat center center;
+    background-size: cover;
+    display: grid;
+    height: 70vh;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.flex{
+    display: flex;
+    gap: 300px;
+    justify-content:right;
+    align-items: flex-start;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.nav-right i {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.call-btn {
+    background: rgb(30, 218, 255);
+    padding: 10px 18px;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.call-btn:hover {
+    background: #0051cc;
+}
+.help{
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+.help ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    cursor: pointer;
+    font-size: 25px;
+    margin-right: 80px;
+}
+.help li:hover{
+    color: rgb(30, 218, 255);
+}
+/* .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+} */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 5%;
+    gap: 40px;
+    background: #f5f5f5;
+}
+
+
+.hero-left {
+    max-width: 700px;
+}
+
+.hero-left h2 {
+    font-size: 55px;
+    margin-bottom: 20px;
+    color: #01142e;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.hero-left p {
+    font-size: 18px;
+}
+
+.hero-right {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 100px;
+}
+
+/* .slider {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+} */
+
+
+.slider {
+    position: relative;
+    width: 650px;
+    height: 420px;
+    margin: auto;
+    perspective: 1200px;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) scale(0.7);
+    opacity: 0;
+    transition: all 0.6s ease;
+    z-index: 0;
+}
+
+.slide img {
+    width: 400px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.slide.active {
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
+    z-index: 3;
+}
+
+.slide.prev-slide {
+    transform: translateX(-130%) scale(0.8) rotateY(25deg);
+    opacity: 0.6;
+    z-index: 2;
+}
+
+.slide.next-slide {
+    transform: translateX(30%) scale(0.8) rotateY(-25deg);
+    opacity: 0.6;
+    z-index: 2;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: #f5f5f5;
+    border: none;
+    color: rgb(30, 218, 255);
+    font-size: 40px;
+    cursor: pointer;
+    z-index: 10;
+    transition: 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prev {
+    left: -300px;
+}
+
+.next {
+    right: -300px;
+}
+
+.slide-content {
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    color: #fff;
+    background: rgb(30, 218, 255);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.slide-content h2 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.slide-content p {
+    font-size: 10px;
+}
+
+.why-us {
+    padding: 100px 5%;
+    background: #f9fafc;
+    text-align: center;
+}
+
+.why-us h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.why-sub {
+    max-width: 600px;
+    margin: 0 auto 60px;
+    color: #555;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.why-card {
+    background: white;
+    padding: 40px 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+}
+
+.why-card i {
+    font-size: 35px;
+    color: rgb(30, 218, 255);
+    margin-bottom: 20px;
+}
+
+.why-card h3 {
+    margin-bottom: 10px;
+}
+
+.why-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.why-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+/* .about-us {
+    padding: 100px 5%;
+    background: white;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.about-btn {
+    display: inline-block;
+    justify-content: center;
+    padding: 12px 25px;
+    margin-left: 500px;
+    background: rgb(30, 218, 255);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.about-btn:hover {
+    background: #163dc7;
+} */
+
+.services {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: rgb(250, 249, 249);
+}
+
+.services h2 {
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.service-box {
+    display: inline-block;
+    width: 250px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: 0.3s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+}
+
+.service-box i {
+    font-size: 40px;
+    color: rgb(30, 218, 255);
+}
+
+.faq {
+    padding: 100px 5%;
+    background: #f9fafc;
+    max-width: 800px;
+    margin: auto;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 16px;
+    background: white;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 6px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.faq-question:hover {
+    background: rgb(30, 218, 255);
+    color: white;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    background: white;
+    padding: 0 20px;
+}
+
+.faq-answer p {
+    padding: 15px 0;
+    color: #555;
+}
+
+.cta {
+    background: white;
+    color: rgb(30, 218, 255);
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.cta h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.cta p {
+    margin-bottom: 25px;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: rgb(30, 218, 255);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cta-btn:hover {
+    background: #1e4eff;
+}
+
+.whatsapp-float {
+    display: inline-block;
+    margin-top: 20px;
+    background: #25D366;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.whatsapp-float {
+    animation: pulse 2s infinite;
+}
+
+footer {
+    background: #02275b;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+}
+/* .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+} */
+.social-links i {
+    background: rgb(30, 83, 255);
+    padding: 10px;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .help ul {
+        display: none;
+        flex-direction: column;
+        background: #000;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        padding: 20px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .slider {
+        width: 95%;
+        height: 350px;
+    }
+
+    .slide-content h2 {
+        font-size: 22px;
+    }
+
+    .slide-content p {
+        font-size: 14px;
+    }
+}
+
+.increase{
+    width: 500px;
+}
