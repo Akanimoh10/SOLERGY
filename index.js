@@ -53,22 +53,6 @@ setInterval(() => {
 
 updateSlides();
 
-prevBtn.addEventListener("click", () => {
-    current--;
-    if (current < 0) {
-        current = slides.length - 1;
-    }
-    showSlide(current);
-});
-
-setInterval(() => {
-    current++;
-    if (current >= slides.length) {
-        current = 0;
-    }
-    showSlide(current);
-}, 5000);
-
 faqQuestions.forEach(question => {
     question.addEventListener("click", () => {
         const answer = question.nextElementSibling;
