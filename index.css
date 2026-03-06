@@ -461,7 +461,8 @@ footer {
     }
 
     .help ul.active{
-        display:flex;
+    display:flex;
+    animation: slideDown 0.3s ease;
     }
 
         .nav-right {
@@ -472,23 +473,6 @@ footer {
         width: 70px;
         height: 70px;
     }
-
-    #navMenu{
-        display:none;
-        flex-direction:column;
-        background:#000;
-        position:absolute;
-        top:80px;
-        right:20px;
-        padding:20px;
-        border-radius:10px;
-    }
-
-    #navMenu li{
-        padding:10px 0;
-        font-size:18px;
-    }
-
 }
 @keyframes slideDown {
     from {
