@@ -13,11 +13,7 @@ const faqQuestions = document.querySelectorAll(".faq-question");
 
 function toggleMenu() {
     const menu = document.getElementById("navMenu");
-    if (menu.style.display === "flex") {
-        menu.style.display = "none";
-    } else {
-        menu.style.display = "flex";
-    }
+    menu.classList.toggle("active");
 }
 
 let current = 0;

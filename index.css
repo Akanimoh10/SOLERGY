@@ -18,59 +18,58 @@ body{
     width: 700px;
     height: 700px;
     margin-top: -200px;
+    margin-bottom: -100px;
 }
 
 .navbar {
     background: url('./images/new-folder-1/solar10.jpg') no-repeat center center;
     background-size: cover;
-    display: grid;
-    height: 70vh;
-    padding: 30px;
+    padding: 15px 20px;
 }
+
 .flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.nav-right {
-    display: flex;
-    align-items: center;
-    color: #fff;
+.logo-img img,
+.logo-img {
+    width: 90px;
+    height: 90px;
 }
 
-.nav-right i {
-    font-size: 20px;
+.help ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    font-size: 18px;
+    color: white;
+}
+
+.help li {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.help li:hover {
+    color: rgb(30, 218, 255);
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    color: white;
     cursor: pointer;
 }
 
 .call-btn {
     background: rgb(30, 218, 255);
-    padding: 10px 18px;
+    padding: 8px 16px;
     border-radius: 20px;
-    color: #fff;
+    color: white;
     text-decoration: none;
-    font-size: 16px;
-}
-
-.call-btn:hover {
-    background: #0051cc;
-}
-.help{
-    display: flex;
-    align-items: center;
-    color: #fff;
-}
-.help ul{
-    display: flex;
-    list-style: none;
-    gap: 20px;
-    cursor: pointer;
-    font-size: 25px;
-    margin-right: 80px;
-}
-.help li:hover{
-    color: rgb(30, 218, 255);
+    font-size: 14px;
 }
 /* .social-links {
     display: flex;
@@ -429,8 +428,69 @@ footer {
 } */
 
 @media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .help {
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        background: rgba(0, 0, 0, 0.95);
+        width: 200px;
+        border-radius: 10px;
+        display: none;
+        padding: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+
+    .help ul {
+        flex-direction: column;
+        gap: 15px;
+        font-size: 16px;
+    }
+
+    .help.active {
+        display: block;
+        animation: slideDown 0.3s ease;
+    }
+
+    .nav-right {
+        display: none;
+    }
+
+    .logo-img {
+        width: 70px;
+        height: 70px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .call-btn {
+        font-size: 0;
+    }
+
+    .call-btn i {
+        font-size: 18px;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
     .slider {
-        width: auto;
+        width: 300px;
         height: 300px;
     }
 
@@ -440,12 +500,14 @@ footer {
     }
 
     .prev {
+        display: none;
         position: absolute;
         width: 30px;
         height: 30px;
         font-size: 20px;
     }
     .next {
+        display: none;
         position: absolute;
         width: 30px;
         height: 30px;
@@ -461,9 +523,9 @@ footer {
     }
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) { */
 
-    .flex {
+    /* .flex {
         flex-direction: column;
         gap: 20px;
         align-items: center;
@@ -492,4 +554,4 @@ footer {
         margin-top: -50px;
     }
 
-}
+} */
