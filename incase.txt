@@ -67,3 +67,26 @@
 .about-btn:hover {
     background: #163dc7;
 } */
+
+.services {
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(250, 249, 249);
+}
+
+.services h2 {
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.service-box {
+    display: inline-block;
+    width: 250px;
+    padding: 20px;
+    height: 200px;
+    margin: 10px;
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: 0.3s ease;
+}
