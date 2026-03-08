@@ -1,0 +1,165 @@
+.help-page{
+padding:80px 20px;
+text-align:center;
+background:#f5f7fa;
+}
+
+.help-page h1{
+font-size:36px;
+margin-bottom:10px;
+}
+
+.help-intro{
+color:#666;
+margin-bottom:40px;
+}
+
+.help-grid{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.help-card{
+background:white;
+padding:30px;
+width:260px;
+border-radius:10px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.help-card:hover{
+transform:translateY(-8px);
+}
+
+.help-card i{
+font-size:40px;
+color:#f4b400;
+margin-bottom:15px;
+}
+
+.support-page{
+padding:80px 20px;
+text-align:center;
+background:#01142e;
+color:white;
+}
+
+.support-box{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+.support-item{
+background:#02245a;
+padding:30px;
+width:250px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.support-item:hover{
+background:#033a8a;
+}
+
+.support-item i{
+font-size:35px;
+margin-bottom:15px;
+color:#f4b400;
+}
+
+.contact-page{
+padding:80px 20px;
+text-align:center;
+background:#f5f7fa;
+}
+
+.contact-form{
+display:flex;
+flex-direction:column;
+max-width:500px;
+margin:auto;
+gap:15px;
+margin-top:30px;
+}
+
+.contact-form input,
+.contact-form textarea{
+padding:12px;
+border:1px solid #ccc;
+border-radius:6px;
+font-size:16px;
+}
+
+.contact-form textarea{
+height:120px;
+}
+
+.contact-form button{
+background:#f4b400;
+border:none;
+padding:14px;
+border-radius:6px;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.contact-form button:hover{
+background:#d99d00;
+}
+
+.back-home{
+display:inline-block;
+margin-top:30px;
+padding:12px 20px;
+background:#f4b400;
+color:black;
+text-decoration:none;
+border-radius:6px;
+font-weight:bold;
+transition:0.3s;
+}
+
+.back-home:hover{
+background:#d99d00;
+}
+
+@media (max-width:768px){
+
+.help-page h1,
+.support-page h1,
+.contact-page h1{
+font-size:32px;
+}
+
+.help-intro{
+font-size:18px;
+}
+
+.help-card{
+width:100%;
+max-width:320px;
+}
+
+.support-item{
+width:100%;
+max-width:320px;
+}
+
+.contact-form{
+width:100%;
+padding:10px;
+}
+
+.contact-form input,
+.contact-form textarea{
+font-size:16px;
+}
+
+}
