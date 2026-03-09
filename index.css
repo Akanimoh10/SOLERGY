@@ -59,12 +59,13 @@ body {
     color: white;
 }
 
-.help li {
+.help li a{
+    color: #fff;
     cursor: pointer;
     transition: 0.3s;
 }
 
-.help li:hover {
+.help li a:hover {
     color: rgb(30, 218, 255);
 }
 
