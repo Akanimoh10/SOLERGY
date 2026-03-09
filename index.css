@@ -61,6 +61,7 @@ body {
 
 .help li a{
     color: #fff;
+    text-decoration: none;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -83,8 +84,13 @@ body {
     color: white;
     text-decoration: none;
     font-size: 14px;
+    transition: 0.3 ease;
+    animation: pulse 2s infinite;
 }
-
+.call-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
 /* .social-links {
     display: flex;
     justify-content: center;
